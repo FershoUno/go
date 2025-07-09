@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+echo "Removing symbolic links for Go binaries..."
+
+for BIN in /usr/local/go/bin/*; do
+  BIN_NAME=$(basename "$BIN")
+  [ -L "/usr/bin/$BIN_NAME" ] && rm -f "/usr/bin/$BIN_NAME"
+done
+
+exit 0

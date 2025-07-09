@@ -1,0 +1,9 @@
+Package: go
+Version: CHANGE_VERSION
+Section: devel
+Priority: optional
+Installed-Size: CHANGE_SIZE
+Architecture: amd64
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Description: Go programming language (Golang)
+ Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.

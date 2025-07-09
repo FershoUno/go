@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+echo "Creating symbolic links for Go binaries..."
+
+for BIN in /usr/local/go/bin/*; do
+  BIN_NAME=$(basename "$BIN")
+  ln -sf "/usr/local/go/bin/$BIN_NAME" "/usr/bin/$BIN_NAME"
+done
+
+exit 0
